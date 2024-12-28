@@ -1,6 +1,5 @@
-import java.util.*;
 //Java automatically promotes each byte, short, char operand to int on evaluation
-public class Java11TypePromoExp {
+public class Java1_9_0TypePromoExp {
     public static void main(String[] args) {
         char a='a';
         char b='b';

@@ -1,5 +1,5 @@
 // First Program
-public class Java1Basics{
+public class Java0_1Basics {
     public static void main(String args[]){
 //print output
 System.out.println("Hello World");

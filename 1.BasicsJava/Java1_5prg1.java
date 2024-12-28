@@ -1,6 +1,6 @@
               //Sum of Two Numbers
 import java.util.*;
-public class Java7prg1 {
+public class Java1_5prg1 {
     public static void main(String[] args) {
         System.out.println("Sum and Product of two Numbers");
         System.out.println("Enter the two numbers: ");

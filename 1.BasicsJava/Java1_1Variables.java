@@ -1,4 +1,4 @@
-public class Java3Variables {
+public class Java1_1Variables {
     public static void main(String[] args) {
         int a=10;
         int b=5;

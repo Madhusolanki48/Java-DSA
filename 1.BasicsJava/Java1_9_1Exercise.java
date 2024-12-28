@@ -1,5 +1,5 @@
 import java.util.*;
-public class Java12Exercise {
+public class Java1_9_1Exercise {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         //Ques 1.Input 3 numbers and output avg

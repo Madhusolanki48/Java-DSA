@@ -1,4 +1,4 @@
-public class Java4Datatype {
+public class Java1_2Datatype {
     public static void main(String[] args) {
         byte a=8;
         System.out.println(a);
