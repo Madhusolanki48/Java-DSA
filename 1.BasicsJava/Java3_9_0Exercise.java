@@ -1,5 +1,5 @@
 import java.util.*;
-public class Java3_91Exercise {
+public class Java3_9_0Exercise {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         /* Ques1.Write a Java program to get a number from the user and
