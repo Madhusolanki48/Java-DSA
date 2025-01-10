@@ -18,5 +18,6 @@ public class Java4_9ContinueStatement {
             System.out.println("Number was : "+n);
         }while(true);
 
+
     }
 }
