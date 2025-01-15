@@ -104,8 +104,62 @@ public class Java5_5PatternsExercise {
             }
             System.out.println();
         }
+
+        //Ques8. Diamond Pattern
+        System.out.println("Diamond Pattern");
+        int a = 4;
+        for (int i = 1; i <= a; i++) {
+            for (int j = i; j < a; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= (2 * i - 1); j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = a - 1; i >= 1; i--) {
+            for (int j = a; j > i; j--) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= (2 * i - 1); j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        //Ques9. Number Pyramid Pattern
+        System.out.println("Number Pyramid Pattern");
+        int b = 5;
+        for (int i = 1; i <= b; i++) {
+            for (int j = i; j < b; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+
+
+        //Ques10. Palindromic Pattern with Numbers Pattern
+        System.out.println("Palindromic Pattern with Numbers Pattern");
+        for (int i = 1; i <= b; i++) {
+            for (int j = i; j < b; j++) {
+                System.out.print(" ");
+            }
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j);
+            }
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
     }
 }
+
+
+
 
 
 
