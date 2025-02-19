@@ -1,4 +1,4 @@
-public class Java9_9_4LettersToUpperCase {
+public class Java9_0LettersToUpperCase {
     /*For a given String convert each the first letter of each
     word to uppercase.
     example: hi, i am madhu

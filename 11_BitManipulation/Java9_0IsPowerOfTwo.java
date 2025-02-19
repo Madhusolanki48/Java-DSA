@@ -1,4 +1,4 @@
-public class Java9_9_9_5IsPowerOfTwo {
+public class Java9_0IsPowerOfTwo {
     public static boolean isPowerOfTwo(int n){
         return (n & (n-1))==0;
     }

@@ -1,5 +1,5 @@
 import java.util.*;
-public class Java9_6Strings {
+public class Java1_Strings {
     public static void main(String[] args) {
         char arr[]={'a','b','c','d'};
         String str="abcd";

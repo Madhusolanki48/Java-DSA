@@ -1,4 +1,4 @@
-public class Java9_9_5StringCompression {
+public class Java9_1StringCompression {
     public static String compress(String str){
         String newStr="";
         for(int i=0;i<str.length();i++){

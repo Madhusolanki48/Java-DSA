@@ -1,4 +1,4 @@
-public class Java9_9_2LargestString {
+public class Java7_LargestString {
     //For a given set of Strings, print the largest string.
     //Lexicographical order
 

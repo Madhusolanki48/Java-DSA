@@ -1,6 +1,6 @@
 import java.util.*;
 import java.util.Arrays;
-public class Java9_9_6StringExercise {
+public class Java9_2StringExercise {
     //Ques1. Count how many times lowercase vowels occurred in a String entered by the user.
     public static void main(String[] args) {
         String str = new Scanner(System.in).next();

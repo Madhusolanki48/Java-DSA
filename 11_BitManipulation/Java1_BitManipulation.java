@@ -1,4 +1,4 @@
-public class Java9_9_7BitManipulation {
+public class Java1_BitManipulation {
     public static void main(String[] args) {
 
         //Binary AND

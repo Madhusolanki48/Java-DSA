@@ -1,4 +1,4 @@
-public class Java9_9_9_7FastExponentiation {
+public class Java9_3FastExponentiation {
     public static int fastExpo(int a,int n){
         int ans=1;
         while(n>0){

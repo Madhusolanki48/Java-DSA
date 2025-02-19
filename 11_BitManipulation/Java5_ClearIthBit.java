@@ -1,4 +1,4 @@
-public class Java9_9_9_1ClearIthBit {
+public class Java5_ClearIthBit {
     public static int clearIthBit(int n,int i){
         int bitMask = ~(1<<i);
         return n & bitMask;

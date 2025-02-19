@@ -1,4 +1,4 @@
-public class Java9_8PalindromeString {
+public class Java3_PalindromeString {
     public static boolean palindromeString(String str) {
         for (int i = 0; i < str.length() / 2; i++) {
             int n = str.length();

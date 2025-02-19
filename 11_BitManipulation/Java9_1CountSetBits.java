@@ -1,4 +1,4 @@
-public class Java9_9_9_6CountSetBits {
+public class Java9_1CountSetBits {
     public static int countSetBits(int n){
         int count=0;
         while(n>0){

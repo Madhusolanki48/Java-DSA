@@ -1,4 +1,4 @@
-public class Java9_9_0StringFunction {
+public class Java4_StringFunction {
     public static void main(String[] args) {
         String s1="Tony";
         String s2="Tony";

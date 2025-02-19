@@ -1,4 +1,4 @@
-public class Java9_9_9GetIthBit {
+public class  Java3_GetIthBit{
     public static int getIthBit(int n,int i){
         int bitMask=1<<i;
         if((n & bitMask)==0){

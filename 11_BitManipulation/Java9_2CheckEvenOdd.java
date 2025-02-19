@@ -1,4 +1,4 @@
-public class Java9_9_9CheckEvenOdd {
+public class Java9_2CheckEvenOdd {
     public static void oddOrEven(int n){
         int bitMask=1;
         if((n & bitMask)==0){

@@ -1,4 +1,4 @@
-public class Java9_7StringMethod {
+public class Java2_StringMethod {
     public static void printLetters(String str){
         for(int i=0;i<str.length();i++){
             System.out.print(str.charAt(i)+" ");

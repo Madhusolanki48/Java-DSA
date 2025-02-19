@@ -1,4 +1,4 @@
-public class Java9_9ShortestPath {
+public class Java5_ShortestPath {
     /* Given a route containing 4 directions(E,W,N,S)
     find the shortest path to reach destination.
      */

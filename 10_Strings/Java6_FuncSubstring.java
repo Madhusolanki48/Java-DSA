@@ -1,4 +1,4 @@
-public class Java9_9_1FuncSubstring {
+public class Java6_FuncSubstring {
     public static String substring(String str, int si, int ei){
         String substr="";
         for(int i=si;i<ei;i++){

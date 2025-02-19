@@ -1,4 +1,4 @@
-public class Java9_9_8BitManipulation2 {
+public class Java2_BitManipulation2 {
     public static void main(String[] args) {
         //Binary One's Compliment
 

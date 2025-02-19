@@ -1,4 +1,4 @@
-public class Java9_9_9SetIthBit {
+public class Java4_SetIthBit {
     public static int setIthBit(int n,int i){
         int bitMask = 1<<i;
         return n | bitMask;
