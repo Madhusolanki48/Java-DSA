@@ -7,14 +7,23 @@ public class Java5_3HybridInheritance {
         dog.breathe();
         dog.walk();
         dog.bark();
+
         Shark shark = new Shark();
-        shark.color = "Gray";
+        shark.color = "Grey";
         System.out.println("Shark color is " + shark.color);
         shark.eat();
         shark.breathe();
         shark.swim();
         shark.size();
         
+        Peacock peacock = new Peacock();
+        peacock.color = "Green";
+        System.out.println("Peacock color is " + peacock.color);
+        peacock.eat();
+        peacock.breathe();
+        peacock.fly();
+        peacock.dance();
+    
     }
 }
 //Base Class
