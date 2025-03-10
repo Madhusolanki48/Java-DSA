@@ -1,8 +1,8 @@
 public class Java9_3OopsExercise {
     public static void main(String[] args){
-        /* Ques1. Print the sum, difference, and product of two complex numbers by creating a
-           class named 'Complex' with separate methods for each operation, 
-           whose real & imaginary parts are entered by the user. */
+/*Ques1. Print the sum, difference, and product of two complex numbers by creating a
+class named 'Complex' with separate methods for each operation, 
+whose real & imaginary parts are entered by the user. */
         
         Complex c = new Complex(6, 3);
         Complex d = new Complex(4, 3);
@@ -14,10 +14,8 @@ public class Java9_3OopsExercise {
         f.printComplex();
         g.printComplex();
 
-        final CarModel car = new ElectricCar();
+        final Car car = new ElectricCar();
         System.out.println(car.drive());
-
-        new BlueCar();
     }
 }
 
@@ -53,46 +51,37 @@ class Complex {
     }
 }
 
-// Ques2. Output of the program
+//Ques2. Ouput of the program
 class Automobile {
     protected String drive() {  
         return "Driving vehicle";
     }
 }
 
-class CarModel extends Automobile { 
+class Car extends Automobile {
     @Override
     protected String drive() {
         return "Driving car";
     }
 }
 
-class ElectricCar extends CarModel {
+class ElectricCar extends Car {
     @Override
     public final String drive() {  
         return "Driving electric car";
     }
 }
 
-// Ques3. Output of the program
-abstract class AbstractCar { 
-    static {
+//Ques3. Output of the program
+abstract class Car{
+    static{
         System.out.print("1");
     }
-    public AbstractCar(String name) { 
+    public Car(String name){
+        super();
         System.out.print("2");
-    }
-    {
+    }{
         System.out.print("3");
     }
 }
-
-class BlueCar extends AbstractCar {
-    {
-        System.out.print("4");
-    }
-    public BlueCar() {
-        super("blue"); 
-        System.out.print("5");
-    }
-}
+public class BlueCar 
