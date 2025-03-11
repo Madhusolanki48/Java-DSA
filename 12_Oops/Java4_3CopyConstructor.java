@@ -1,4 +1,4 @@
-public class Java4_CopyConstructor {
+public class Java4_3CopyConstructor {
     public static void main(String[] args) {
         Student s1=new Student();
         s1.name="Madhu";

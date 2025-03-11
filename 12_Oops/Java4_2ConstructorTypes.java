@@ -1,4 +1,4 @@
-public class Java4_ConstructorTypes {
+public class Java4_2ConstructorTypes {
     public static void main(String[] args) {
         Student s1=new Student();
         Student s2=new Student("Madhu");
