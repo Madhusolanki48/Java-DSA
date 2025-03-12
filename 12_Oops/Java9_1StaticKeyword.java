@@ -1,4 +1,4 @@
-public class Java9_1StaticKeyboard {
+public class Java9_1StaticKeyword {
     public static void main(String[] args) {
         Student s1=new Student();
         s1.schoolName="JMV";
