@@ -17,7 +17,7 @@ public class Java9_2RemoveDuplicates {
     }
     public static void main(String[] args) {
         String str="apnacollege";
-        removeDuplicates(str, 0, new StringBuilder(""), null);
+        removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
     }
     
 }
