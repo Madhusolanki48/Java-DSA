@@ -12,7 +12,7 @@ public class Java9_5RecursionExercise {
         allOccurances(arr, key, i+1);
     }
 
-    /*You are given a number(eg-2019),covert it into a String of english like
+    /*Ques2. You are given a number(eg-2019),covert it into a String of english like
      *"two zero one nine". Use a recursive function to solve this problem.
      *Note-The digit of the number will only be in the range 0-9
      and the last digit of a number can't be 0*/
@@ -26,18 +26,32 @@ public class Java9_5RecursionExercise {
                 int lastDigit=num%10;
                 printDigits(num/10);
                 System.out.print(digits[lastDigit]+" ");
-            }                 
+            }
+            
+    //Ques3. Write a program to find Length of a String using Recursion
+    public static int lengthOfString(String str){
+        if(str.length()==0){
+            return 0;
+        }
+        return lengthOfString(str.substring(1 ))+1;
+    }
 
 
     public static void main(String[] args) {
-        int arr[]={1,2,3,4,3,5,6,3};
-        int key=3;
+        int arr[]={3,2,4,5,6,2,7,2,2};
+        int key=2;
         allOccurances(arr, key, 0);
         System.out.println();
 
-        //Solution 2
-        printDigits(1234);
+        
+        printDigits(1947);
         System.out.println();
+
+
+        String str="hello";
+        System.out.println(lengthOfString(str));
+
+        
     }
     
 }
