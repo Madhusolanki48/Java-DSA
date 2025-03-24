@@ -23,7 +23,8 @@ Welcome to my **Data Structures and Algorithms (DSA) with Java** repository! Thi
 | **🔟 Strings** | Java1_Strings.java, Java2_StringMethod.java, Java3_PalindromeString.java, Java4_StringFunction.java,Java5_ShortestPath.java Java6_FuncSubstring.java, Java7_LargestString.java, Java8_StringBuilder.java, Java9_0LettersToUpperCase.java, Java9_1StringCompression.java, Java9_2StringExercise.java |
 | **1️⃣1️⃣ Bit Manipulation** | Java1_BitManipulation.java, Java2_BitManipulation2.java, Java3_GetIthBit.java, Java4_SetlthBit.java, Java5_ClearithBit.java, Java6_UpdatelthBit.java, Java7_ClearLastlthBit.java, Java8_ClearRangeOfBits.java, Java9_OlsPowerOfTwo.java, Java9_1CountSetBits.java, Java9_2CheckEvenOdd.java, Java9_3FastExponentiation.java |
 | **1️⃣2️⃣ OOPS** | Java1_ClassesObjects.java, Java2_AccessModifiers.java, Java3_GettersNSetters.java, Java4_1Constructor.java, Java4_2ConstructorTypes.java, Java4_3CopyConstructor.java, Java5_1Inheritance.java, Java5_2HierarchialInheritance.java, Java5_3HybridInheritance.java, Java6_MethodOverloading.java, Java7_MethodOverriding.java, Java8_Abstraction.java, Java9_Interfaces.java, Java9_1StaticKeyword.java, Java9_2SuperKeyword.java, Java9_30opsExercise.java |
-| **1️⃣3️⃣ Recursion** |
+| **1️⃣3️⃣ Recursion** | Java1_NuminDecorder.java, Java2_NumInIncOrder.java, Java3_FactorialOfN.java, Java4_SumOfNaturalNums.java, Java5_NthFibonacciNum.java, Java6_CheckSortedArray.java, Java7_FindFirstOccur.java, Java8_FindLastOccur.java, Java9_XToPowerN.java, Java9_XToPowerNOptSol.java, Java9_1Tiling Problem.java, Java9_2RemoveDuplicates.java, Java9_3FriendsPairingProb.java, Java9_4BinarysStringProblem.java, Java9_5RecursionExercise.java |     
+
 
 ---
 
