@@ -36,6 +36,28 @@ public class Java9_5RecursionExercise {
         return lengthOfString(str.substring(1 ))+1;
     }
 
+    /*Ques4. We are given a string S, we need to find the count of all contiguous
+     * substrings starting and ending with the same character.
+     */
+
+     public static int countContiguousStrings(String str1, int i, int j, int n){
+        //base case
+        if(n==1){
+            return 1;
+        }
+        if(n<=0){
+            return 0;
+        }
+        int result=countContiguousStrings(str1, i+1, j, n-1)
+        +countContiguousStrings(str1, i, j-1, n-1)
+        -countContiguousStrings(str1, i+1, j-1, n-2);
+
+        if(str1.charAt(i)==str1.charAt(j)){
+            result++;
+        }
+        return result;
+     }
+
 
     public static void main(String[] args) {
         int arr[]={3,2,4,5,6,2,7,2,2};
@@ -50,6 +72,11 @@ public class Java9_5RecursionExercise {
 
         String str="hello";
         System.out.println(lengthOfString(str));
+
+
+        String str1="abcab";
+        int n=str1.length();
+        System.out.print(countContiguousStrings(str1, 0, n-1, n));
 
         
     }
