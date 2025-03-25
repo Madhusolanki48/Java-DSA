@@ -59,6 +59,21 @@ public class Java9_5RecursionExercise {
      }
 
 
+     //Ques5. Tower Of Hanoi Problem
+      public static void towerOfHanoi(int n1,String src,String helper,String dest){
+        if(n1==1){
+            System.out.println("Transfer disk"+n1+" from "+src+" to "+dest);
+            return;
+        }
+        //transfer top n-1 from src to helper using dest as 'helper'
+        towerOfHanoi(n1-1, src, dest, helper);
+        //transfer nth from src to dest
+        System.out.println("Transfer disk"+n1+" from "+src+" to "+dest);
+        //transfer n-1 from helper to dest using src as helper
+        towerOfHanoi(n1-1, helper, src, dest);
+      }
+
+
     public static void main(String[] args) {
         int arr[]={3,2,4,5,6,2,7,2,2};
         int key=2;
@@ -76,7 +91,11 @@ public class Java9_5RecursionExercise {
 
         String str1="abcab";
         int n=str1.length();
-        System.out.print(countContiguousStrings(str1, 0, n-1, n));
+        System.out.println(countContiguousStrings(str1, 0, n-1, n));
+
+
+        int n1=2;
+        towerOfHanoi(n1, "A", "B", "C");
 
         
     }
