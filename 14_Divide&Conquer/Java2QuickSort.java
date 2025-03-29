@@ -16,11 +16,11 @@ public class Java2QuickSort {
         quickSort(arr, pivotIndex+1, ei); //right
     }
 
-    public static void partition(int arr[],int si,int ei){
+    public static int partition(int arr[],int si,int ei){
         int pivot=arr[ei];
         int i=si-1; //to make place for els smaller than pivot
 
-        for(int j=0;j<ei;j++){
+        for(int j=si;j<ei;j++){
             if(arr[j]<=pivot){
                 i++;
                 //swap
@@ -29,10 +29,19 @@ public class Java2QuickSort {
                 arr[i]=temp;
             }
         }
+        // Swap pivot into its correct position
+        int temp = arr[i + 1];
+        arr[i + 1] = arr[ei];
+        arr[ei] = temp;
+
+        return i + 1; // Return the pivot index
     }
+    
     public static void main(String[] args) {
         int arr[]={6,3,9,8,2,5};
-        quickSort(arr, 0, );
+        quickSort(arr, 0,arr.length-1);
+        printArr(arr);
     }
     
 }
+
