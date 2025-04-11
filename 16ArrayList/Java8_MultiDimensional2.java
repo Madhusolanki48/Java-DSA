@@ -1,17 +1,25 @@
 import java.util.ArrayList;
 
-public class Java8_MultiDimensional {
+public class Java8_MultiDimensional2 {
     public static void main(String[] args) {
     ArrayList<ArrayList<Integer>>mainList=new ArrayList<>();
     ArrayList<Integer> list1 =new ArrayList<>();
-    list1.add(1);
-    list1.add(2);
-    mainList.add(list1);
     ArrayList<Integer> list2 =new ArrayList<>();
-    list2.add(3);
-    list2.add(4);
+    ArrayList<Integer> list3 =new ArrayList<>();
+    for(int i=1;i<=5;i++){
+        list1.add(i*1);  // 1 2 3 4 5
+        list2.add(i*2);  // 2 4 6 8 10
+        list3.add(i*3);  // 3 6 9 12 15
+    }
+    mainList.add(list1);
     mainList.add(list2);
+    mainList.add(list3);
+    list2.remove(3);
+    list3.remove(2);
 
+    System.out.println(mainList);
+
+    //nested loops
     for(int i=0;i<mainList.size();i++){
         ArrayList<Integer>currList=mainList.get(i);
         for(int j=0;j<currList.size();j++){
@@ -19,6 +27,6 @@ public class Java8_MultiDimensional {
         }
         System.out.println();
     }
-    System.out.println(mainList);
-}  
+    
+}
 }

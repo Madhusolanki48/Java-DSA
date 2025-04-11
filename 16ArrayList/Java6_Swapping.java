@@ -21,6 +21,7 @@ public class Java6_Swapping {
         swap(list,idx1,idx2);
         System.out.println(list);
 
+        
     }
     
 }
