@@ -54,6 +54,34 @@ public class Java9_3ArraylistExercise {
         }
         return ans;
       }
+
+      /*Question 4: Beautiful ArrayList (MEDIUM)
+       An ArrayList nums of size n is beautiful if:
+       nums is a permutation of the integers in the range [1, n].
+       For every 0 <= i < j < n, there is no index k with i < k < j such that
+       2 * nums.get(k) == nums.get(i) + nums.get(j).
+       Given the integer n, return any beautiful ArrayList nums of size n.
+       There will be at least one valid answer for the given n. 
+       */
+      public ArrayList<Integer> beautifulArray(int n){
+        ArrayList<Integer>ans=new ArrayList<>();
+        ans.add(1);
+        for(int i=2;i<=n;i++){
+        ArrayList<Integer>temp=new ArrayList<>();
+        for(Integer e:ans){
+            if(2*e<=n)
+            temp.add(e*2);
+        }
+        for(Integer e : ans){
+            if(2*e-1<=n)temp.add(e*2-1);
+          }
+          ans=temp;
+        }
+        return ans;
+    }
+
+
+
      public static void main(String[] args) {
         ArrayList<Integer> list=new ArrayList<>();
         
