@@ -1,4 +1,7 @@
+import java.net.Inet4Address;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class Java9_3ArraylistExercise {
 
@@ -26,6 +29,43 @@ public class Java9_3ArraylistExercise {
         return inc || dec;
      }
 
+     /*Question 2: Lonely Numbers in ArrayList (MEDIUM)
+    You are given an integer ArrayList nums.
+   A number x is lonely when: It appears only once,
+   No adjacent numbers (i.e., x + 1 and x - 1) appear in the ArrayList.
+   Return all lonely numbers in nums.
+   You may return the answer in any order.
+   Sample Input 1: nums = [10, 6, 5, 8] Sample Output 1:[10, 8]
+   Explanation: 10 is lonely: it appears exactly once, and 9 and 11 are not in the list.
+   8 is lonely: it appears exactly once, and 7 and 9 are not in the list.
+   5 and 6 are not lonely because they are adjacent to each other.
+   Sample Input 2: nums = [1, 3, 5, 3] Sample Output 2:[1, 5]
+   Explanation:1 is lonely: it appears once, and 0 and 2 are not in the list.
+   5 is lonely: it appears once, and 4 and 6 are not in the list.
+   3 is not lonely: it appears more than once.
+   Constraints: 1 <= nums.size() <= 100000  ;0 <= nums.get(i) <= 1000000
+      */
+      public ArrayList<Integer>findLonely(ArrayList<Integer>nums){
+        Collections.sort(nums);
+        ArrayList<Integer>list=new ArrayList<>();
+        for(int i=0;i<nums.size()-1;i++){
+            if(nums.get(i-1)+1 <nums.get(i) && nums.get(i)+1 <nums.get(i+1)){
+                list.add(nums.get(i));
+            }
+        }
+        if(nums.size()==1){
+            list.add(nums.get(0));
+        }
+        if(nums.size()>1){
+            if(nums.get(0)+1<nums.get(1)){
+                list.add(nums.get(0));
+            }
+            if(nums.get(nums.size()-2)+1 < nums.get(nums.size()-1)){
+                list.add(nums.get(nums.size()-1));
+            }
+        }
+        return list;
+      }
      /*Question 3: Most Frequent Number following Key (EASY)
        You are given an integer ArrayList nums. You are also given an integer key, which is present in nums.
        For every unique integer target in nums, count the number of times target immediately follows an occurrence of key in nums.
