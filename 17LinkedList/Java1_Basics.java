@@ -1,3 +1,5 @@
+import java.security.PublicKey;
+
 public class Java1_Basics {
     public static class Node{
         int data;
@@ -9,11 +11,13 @@ public class Java1_Basics {
     }
     public static Node head;
     public static Node tail;
+    public static int size;
 
     //Add in Linked List
     public void addFirst(int data){
         //step-1: create new node
         Node newNode=new Node(data);
+        size++;
         if(head == null){
             head=tail=newNode;
             return;
@@ -24,6 +28,18 @@ public class Java1_Basics {
 
         //step-3: head = newNode
         head=newNode;
+    }
+     
+     //Add in Last in Linked List
+    public void addLast(int data){
+        Node newNode=new Node(data);
+        size++;
+        if(head==null){
+            head=tail=newNode;
+            return;
+        }
+        tail.next=newNode;
+        tail=newNode;
     }
 
         // Print a linked list
