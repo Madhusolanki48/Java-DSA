@@ -1,5 +1,5 @@
-public class Java9_2DoublyLL {
-    static class Node {
+public class Java9_3ReverseDLL {
+     static class Node {
         int data;
         Node next;
         Node prev;
@@ -39,34 +39,34 @@ public class Java9_2DoublyLL {
         System.out.println("null");
     }
 
-    //remove - removeLast
-    public int removeLast() {
-        if (head == null) {
-            System.out.println("DLL is empty");
-            return Integer.MIN_VALUE;
-        }
-        if(size ==1){
-            int val = head.data;
-            head = tail = null;
-            size--;
-            return val;
+    
+    public void reverseDll(){
+        Node curr=head;
+        Node prev=null;
+        Node next;
 
+        while(curr != null){
+            next=curr.next;
+            curr.next=prev;
+            curr.prev=next;
+
+            prev=curr;
+            curr=next;
         }
-        int val = head.data;
-        head = head.next;
-        head.prev = null;
-        return val;
-        
+        head=prev;
     }
 
+
 public static void main(String[] args) {
-    Java9_2DoublyLL dll = new Java9_2DoublyLL();
+    Java9_3ReverseDLL dll = new Java9_3ReverseDLL();
     dll.addFirst(3);
     dll.addFirst(2);
     dll.addFirst(1);
     dll.printList();
-    System.out.println(dll.size);
-    System.out.println(dll.removeLast());
+    
+    dll.reverseDll();
     dll.printList();
+
 }
+    
 }
