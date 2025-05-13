@@ -80,12 +80,30 @@ public class Java9_4CircularLL {
                         }
                         return last;
             }
+            //traverse 
+            static void traverse(Node last){
+                Node p;
+                if(last==null){
+                    System.out.println("List is Empty");
+                    return;
+                }
+                p=last.next;
+                do{
+                    System.out.println(p.data+" ");
+                    p=p.next;
+                }
+                while(p != last.next);
+            }
+
     public static void main(String[] args) {
         Node last=null;
         last=addToEmpty(last, 6);
         last =addFront(last, 2);
         last=addEnd(last, 8);
         last=addAfter(last,10 , 2);
+        traverse(last);
         deleteNode(last, 8);
+        traverse(last);
+
     }
     }
