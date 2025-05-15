@@ -1,4 +1,4 @@
-public class Java9_5LinkedListQues {
+public class Java9_5LinkedListQues1 {
     /*Ques1: Interesection of Two Linked Lists
      *In a system there are two singly linked list. By some programming error, the end node of one
      of the linked lists got linked to the second list, forming an inverted Y-shaped list.Write a 
@@ -26,7 +26,7 @@ public class Java9_5LinkedListQues {
         return null;
     }
     public static void main(String[] args) {
-        Java9_5LinkedListQues list=new Java9_5LinkedListQues();        Node head1,head2;
+        Java9_5LinkedListQues1 list=new Java9_5LinkedListQues1();        Node head1,head2;
         head1=new Node(10);
         head2=new Node(3);
         Node newNode=new Node(6);
