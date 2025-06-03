@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Java6_QueueQues {
+public class Java6_StackUsing2Queues {
     // Stack Implementation using 2 Queues [Push or Pop]
 
     static class Stack {
